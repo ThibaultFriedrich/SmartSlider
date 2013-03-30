@@ -57,3 +57,7 @@ body {
 	overflow : hidden;
 	text-align : center;
 }
+
+.slide-container {
+	font-size : 30px;
+}

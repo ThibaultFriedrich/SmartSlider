@@ -1,5 +1,9 @@
 body.theme-default {
-	background : red;
+	/*background : red;*/
+}
+
+.theme-default .slide {
+	background : white;
 }
 
 .theme-default .slide-container {
