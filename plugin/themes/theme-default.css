@@ -1,5 +1,6 @@
 body.theme-default {
 	/*background : red;*/
+	color : black;
 }
 
 .theme-default .slide {
@@ -12,3 +13,62 @@ body.theme-default {
 	padding : 20px;
 
 }
+.theme-default h2 {
+	height : 44px;
+	padding : 2px;
+	margin : 20px;
+	margin-bottom : 60px;
+
+	/*background : red;*/
+}
+
+.theme-default .green {
+	box-shadow : 0px 0px 50px #2a7d22;
+	background-color : #2a5422;
+}
+
+.theme-default .purple {
+	box-shadow : 0px 0px 50px #744f89;
+	background-color : #432355;
+}
+
+.theme-default .red {
+	box-shadow : 0px 0px 50px #b52022;
+	background-color : #542022;
+}
+
+.theme-default .blue {
+	box-shadow : 0px 0px 50px #005eff;
+	background-color : #214c53;
+}
+
+.theme-default .frame {
+	margin-bottom : 20px;
+	padding : 20px;
+}
+
+.theme-default.font_auto .green, 
+.theme-default.font_auto .blue,
+.theme-default.font_auto .red,
+.theme-default.font_auto .purple,
+.theme-default.font_light .green, 
+.theme-default.font_light .blue,
+.theme-default.font_light .red,
+.theme-default.font_light .purple
+{
+	color : #b2b2b2;
+}
+
+
+.theme-default.font_light {
+	color : #b2b2b2;
+}
+
+.theme-default.font_dark {
+	color : black;
+}
+
+
+
+
+

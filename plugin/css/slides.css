@@ -18,9 +18,13 @@ body {
 	background : white;
 	opacity : 0;
 	text-align : center;
-	position : fixed;
+	/*position : fixed;*/
 	/*position : relative;*/
-	top : 0px;
+	/*top : 0px;*/
+}
+
+.light .goto {
+	background : black;
 }
 
 .goto:hover {
@@ -29,11 +33,13 @@ body {
 }
 
 .goto_left {
-	left : 0px;
+	/*left : 0px;*/
+	float : left;
 }
 
 .goto_right {
-	right : 0px;
+	/*right : 0px;*/
+	float : right;
 }
 
 .goto img {
@@ -58,6 +64,25 @@ body {
 	text-align : center;
 }
 
+.frame {
+	text-align : left;
+
+}
+
 .slide-container {
 	font-size : 30px;
 }
+
+.left {
+	text-align : left;
+}
+
+.right {
+	text-align : right;
+}
+
+.center {
+	text-align : center;
+}
+
+

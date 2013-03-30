@@ -39,30 +39,5 @@ var gotoPreviousSlide = function(){
 
 
 $(function(){
-	placement_goto();
-	resize_move_h();
-
-	//body = $('body');
-	$(window).resize(placement_goto);
-	$(window).resize(resize_slides);
-	$(window).resize(resize_move_h);
-	$(window).resize(resize_move_w);
-
-
-	$('.goto_left').click(function(){
-		gotoPreviousSlide();
-
-	});
-	$('.goto_right').click(function(){
-		gotoNextSlide();	
-	});
-	$(document).keydown(function(e){
-		if (e.keyCode == 37) { 
-			gotoPreviousSlide();
-			return false;
-		} else if(e.keyCode == 39){
-			gotoNextSlide()
-		}
-	});
 
 });
