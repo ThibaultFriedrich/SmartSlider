@@ -1,0 +1,4 @@
+$(function(){
+	addSlide();
+	addSlide();
+});

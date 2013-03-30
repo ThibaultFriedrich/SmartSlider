@@ -1,0 +1,59 @@
+body {
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+
+	margin : 0px;
+	padding : 0px;
+	width : 100%;
+	height : 100%;
+	overflow : hidden;
+}
+
+.goto {
+	height : 100%;
+	width : 75px;
+	background : white;
+	opacity : 0;
+	text-align : center;
+	position : fixed;
+	/*position : relative;*/
+	top : 0px;
+}
+
+.goto:hover {
+	cursor : pointer;
+	opacity : 0.65;
+}
+
+.goto_left {
+	left : 0px;
+}
+
+.goto_right {
+	right : 0px;
+}
+
+.goto img {
+	position : relative;
+
+}
+
+.move {
+	vertical-align : top;
+	margin : 0px;
+	padding : 0px;
+}
+
+.slide {
+	display : inline-block;
+	vertical-align : top;
+	/*height : 100%;*/
+	background : blue;
+	margin : 0px;
+	padding : 0px;
+	overflow : hidden;
+	text-align : center;
+}

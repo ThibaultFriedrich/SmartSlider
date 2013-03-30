@@ -1,0 +1,10 @@
+body.theme-default {
+	background : red;
+}
+
+.theme-default .slide-container {
+	background : white;
+	margin : 20px;
+	padding : 20px;
+
+}
