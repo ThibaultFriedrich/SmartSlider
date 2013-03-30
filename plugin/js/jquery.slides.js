@@ -17,9 +17,10 @@ var addSlide = function(params){
 
 	var params = $.extend({
 		Title : null,
-		TitleColor : 'color_default',
+		TitleStyle : 'title_default_style',
 		Frame : null,
-		FrameStyle : 'style_default',
+		FrameStyle : 'default_style', 
+		SlideStyle : 'classic',
 	},params);
 	maxIdSlide++;
 
@@ -33,33 +34,41 @@ var addSlide = function(params){
 
 	last_goto = goto_right;
 	var container = $('<div class="slide-container"></div>').appendTo(slide);
-	
+
 
 	// Title
 	if(typeof params.Title == "string"){
-		var title = $('<h2 class="'+params.TitleColor+'"></h2>').appendTo(container);
-		title.html(params.Title);
+		var title = $('<h2></h2>').appendTo(container);
+		title.addClass(params.TitleStyle).html(params.Title);
+	}
+
+	var frame_container = container;
+	if(params.SlideStyle == 'vertical'){
+		frame_container = $('<div class="row-fluid"></div>').appendTo(container);
 	}
 
 	// Frames
 	if(params.Frame != null){
 		if(typeof params.Frame == "string"){
 			var frame = $('<div class="frame"></div>');
-			frame.html(params.Frame).appendTo(container);
+			frame.html(params.Frame).appendTo(frame_container);
 			if(typeof params.FrameStyle =="string"){
 				frame.addClass(params.FrameStyle);
+			} else {
+				frame.addClass('default_style');
+				alert("ok");
 			}
 		} else {
 			var lastClassNames = "";
 			for(var i = 0 ; i < params.Frame.length ; i++){
 				var frame = $('<div class="frame"></div>');
-				frame.html(params.Frame[i]).appendTo(container);
+				frame.html(params.Frame[i]).appendTo(frame_container);
 				if(typeof params.FrameStyle =="string"){
-					frame.addClass(FrameStyle);
+					frame.addClass(params.FrameStyle);
 				} else if(typeof params.FrameStyle[i] == "string"){
 					frame.addClass(params.FrameStyle[i]);
 				} else {
-					frame.addClass('style_default');
+					frame.addClass('default_style');
 				}
 
 			}
@@ -73,18 +82,20 @@ var addSlide = function(params){
 var configure = function(params){
 	var params = $.extend({
 		Title : "Slides",
-		TitlesColor : 'none', 
 		Resolution : "auto", // auto or AxB
-		FontColor : 'auto' // auto or light or dark
+		FontColor : 'auto', // auto or light or dark
+		FramesStyleDefault : 'none',
+		TitlesStyleDefault : 'none',
 	},params);
-	
+
 	if(params.Resolution != "auto"){
 		var sizes = params.Resolution.split('x');
 		body.width(sizes[0]);
 		body.height(sizes[1]);
 	}
 
-	$('h2.color_default').addClass(params.TitlesColor);
+	$('h2.title_default_style').addClass(params.TitlesStyleDefault);
+	$('.frame.default_style').addClass(params.FramesStyleDefault);
 
 	last_goto.css('visibility','hidden');
 	placement_goto();
@@ -109,10 +120,20 @@ var configure = function(params){
 			gotoNextSlide();
 		}
 	});
-	
+
 	body.addClass('font_'+params.FontColor); 
-	
+
 	$('title').html(params.Title);
+
+
+	$('.row-fluid').each(function(){
+		var frames = $(this).children();
+		var nb = frames.length;
+		frames.each(function(){
+			$(this).addClass('span'+12/nb);
+		});
+	});
+
 };
 (function($) {
 })(jQuery);

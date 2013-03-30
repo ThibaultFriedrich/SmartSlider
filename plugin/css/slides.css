@@ -71,6 +71,7 @@ body {
 
 .slide-container {
 	font-size : 30px;
+	line-height : 30px;
 }
 
 .left {
@@ -85,4 +86,7 @@ body {
 	text-align : center;
 }
 
-
+.row-fluid {
+	/*max-width : 940px; */
+	/*width : 100%;*/
+}

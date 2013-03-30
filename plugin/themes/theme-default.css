@@ -15,9 +15,11 @@ body.theme-default {
 }
 .theme-default h2 {
 	height : 44px;
-	padding : 2px;
-	margin : 20px;
-	margin-bottom : 60px;
+	padding : 5px;
+	padding-left : 15px;
+	padding-right : 15px;
+	margin : 25px;
+	margin-bottom : 40px;
 
 	/*background : red;*/
 }
@@ -43,7 +45,7 @@ body.theme-default {
 }
 
 .theme-default .frame {
-	margin-bottom : 20px;
+	/*margin-bottom : 20px;*/
 	padding : 20px;
 }
 
