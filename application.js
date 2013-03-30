@@ -18,5 +18,14 @@ $(function(){
 		FrameStyle : ['purple'],
 		SlideStyle : 'vertical'
 	});
-	configure({Title:'slides', TitlesStyleDefault:'blue', FramesStyleDefault:'red center'});
+
+	/*addSlide({
+		Frame : '<div class="row-fluid"><div class="span6">ok</div><div class="span6">ko</div></div>'
+	});*/
+	configure({
+		Title:'slides',
+		TitlesStyleDefault:'blue',
+		FramesStyleDefault:'red center'
+	
+	});
 });

@@ -25,14 +25,14 @@ var addSlide = function(params){
 	maxIdSlide++;
 
 	var slide = $('<div class="slide slide-'+maxIdSlide+'"></div>').appendTo(move);
-	var goto_left = $('<div class="goto goto_left"><img class="previous" src="plugin/img/previous_light.png"></div>').appendTo(slide).click(gotoPreviousSlide);
+	//var goto_left = $('<div class="goto goto_left"><img class="previous" src="plugin/img/previous_light.png"></div>').appendTo(slide).click(gotoPreviousSlide);
 	if(maxIdSlide ==1){
-		goto_left.css('visibility','hidden');
+		//goto_left.css('visibility','hidden');
 	}
 
-	var goto_right = $('<div class="goto goto_right"><img class="next" src="plugin/img/next_light.png"></div>').appendTo(slide).click(gotoNextSlide);
+	//var goto_right = $('<div class="goto goto_right"><img class="next" src="plugin/img/next_light.png"></div>').appendTo(slide).click(gotoNextSlide);
 
-	last_goto = goto_right;
+	//last_goto = goto_right;
 	var container = $('<div class="slide-container"></div>').appendTo(slide);
 
 
@@ -44,7 +44,7 @@ var addSlide = function(params){
 
 	var frame_container = container;
 	if(params.SlideStyle == 'vertical'){
-		frame_container = $('<div class="row-fluid"></div>').appendTo(container);
+		frame_container = $('<div class="sub_container row-fluid"></div>').appendTo(container);
 	}
 
 	// Frames
@@ -97,7 +97,41 @@ var configure = function(params){
 	$('h2.title_default_style').addClass(params.TitlesStyleDefault);
 	$('.frame.default_style').addClass(params.FramesStyleDefault);
 
-	last_goto.css('visibility','hidden');
+	//last_goto.css('visibility','hidden');
+
+	$('.goto').css('opacity','0');
+
+	$('.goto_left').mouseover(function(){
+		if(idSlide != 1){
+		$('.goto_left').css('opacity','0.65').css('cursor','pointer');
+
+		} else {
+		$('.goto_left').css('opacity','0').css('cursor','auto');
+
+		}
+	});
+
+	$('.goto_right').mouseover(function(){
+		if(idSlide != maxIdSlide){
+		$('.goto_right').css('opacity','0.65').css('cursor','pointer');
+		} else {
+		$('.goto_right').css('opacity','0').css('cursor','auto');
+			//alert('ko');
+		}
+	});
+	
+	$('.goto_left').mouseleave(function(){
+		$('.goto_left').css('opacity','0').css('cursor','auto');
+	});
+
+	$('.goto_right').mouseleave(function(){
+		$('.goto_right').css('opacity','0').css('cursor','auto');
+	});
+
+	$('.goto_right').click(gotoNextSlide);
+
+	$('.goto_left').click(gotoPreviousSlide);
+	
 	placement_goto();
 	resize_slides();
 	resize_move_w();
@@ -126,7 +160,7 @@ var configure = function(params){
 	$('title').html(params.Title);
 
 
-	$('.row-fluid').each(function(){
+	$('.sub_container.row-fluid').each(function(){
 		var frames = $(this).children();
 		var nb = frames.length;
 		frames.each(function(){

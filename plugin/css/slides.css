@@ -16,11 +16,12 @@ body {
 	height : 100%;
 	width : 75px;
 	background : white;
-	opacity : 0;
+	opacity : 0.65;
 	text-align : center;
-	/*position : fixed;*/
+	position : fixed;
 	/*position : relative;*/
-	/*top : 0px;*/
+	top : 0px;
+	z-index : 100;
 }
 
 .light .goto {
@@ -28,18 +29,18 @@ body {
 }
 
 .goto:hover {
-	cursor : pointer;
-	opacity : 0.65;
+	/*cursor : pointer;*/
+	/*opacity : 0.65;*/
 }
 
 .goto_left {
-	/*left : 0px;*/
-	float : left;
+	left : 0px;
+	/*float : left;*/
 }
 
 .goto_right {
-	/*right : 0px;*/
-	float : right;
+	right : 0px;
+	/*float : right;*/
 }
 
 .goto img {
@@ -71,7 +72,7 @@ body {
 
 .slide-container {
 	font-size : 30px;
-	line-height : 30px;
+	/*line-height : 30px;*/
 }
 
 .left {
@@ -89,4 +90,13 @@ body {
 .row-fluid {
 	/*max-width : 940px; */
 	/*width : 100%;*/
+}
+
+.all {
+	max-width : 100%;
+	margin : auto;
+}
+
+.test {
+	background : blue;
 }
