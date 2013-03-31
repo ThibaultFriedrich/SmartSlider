@@ -43,7 +43,7 @@ $(function(){
 		TitlesStyleDefault:'blue',
 		FramesStyleDefault:'red center',
 		FontSize : 'auto',
-		Resolution : '800x600',
+		Resolution : 'auto',
 		Author : 'Thibault Friedrich'
 	
 	
