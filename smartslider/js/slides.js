@@ -26,6 +26,7 @@ var animate_move = function(){
 var gotoNextSlide = function(){
 	if(idSlide < maxIdSlide){
 		idSlide++;
+		$('.progression').html(idSlide+'/'+maxIdSlide);
 		animate_move();
 	}
 };
@@ -33,6 +34,7 @@ var gotoNextSlide = function(){
 var gotoPreviousSlide = function(){
 	if(idSlide > 1){
 		idSlide--;
+		$('.progression').html(idSlide+'/'+maxIdSlide);
 		animate_move();
 	}
 };
@@ -63,7 +65,9 @@ var listParser = function(string){
 var updateSpanHeight = function(){
 	$('.sub_container.row-fluid').each(function(){
 		var max_height = 0;
-		$(this).children().css('height','100%').each(function(){
+		$(this).children().css('height','100%')
+		.each(function(){
+				//alert($(this).height());
 			if(max_height < $(this).height()){
 				max_height = $(this).height();
 			}

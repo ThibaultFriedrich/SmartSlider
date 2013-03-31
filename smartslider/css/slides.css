@@ -65,6 +65,27 @@ body {
 
 }
 
+.progression, .author {
+	position : fixed;
+	width : 25%;
+	height : 30px;
+	font-size : 20px;
+	bottom : 0px;
+}
+
+.progression {
+	text-align : right;
+	right : 0px;
+	padding-right : 50px;
+}
+
+.author {
+	text-align :left;
+	left : 0px;
+	padding-left : 50px;
+}
+
+
 .move {
 	vertical-align : top;
 	margin : 0px;
@@ -106,6 +127,19 @@ body {
 	text-align : justify;
 }
 
+/*.top {
+	vertical-align : top;
+}
+
+.bottom {
+	vertical-align : bottom;
+}
+
+.middle {
+	vertical-align : middle;
+}*/
+
+
 .row-fluid {
 	/*max-width : 940px; */
 	/*width : 100%;*/
@@ -118,4 +152,10 @@ body {
 
 .test {
 	background : blue;
+}
+
+object {
+	box-shadow : 0px 15px 10px  #999999;
+	max-height : 50%;
+	max-width : 50%;
 }

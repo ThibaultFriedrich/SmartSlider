@@ -1,25 +1,40 @@
 $(function(){
 	addSlide({
 		Title:"SmartSlider", 
-		Frame : 'Ce plugin jquery et css va vous permettre de faire des présentations très rapidement', 
+		Frame : "C'est bien plus qu'un simple jquery et css.<br>La preuve : voilà ce que vous pouvez faire avec 40 petites lignes de jquery", 
 		FrameStyle : 'none',
 		TitleStyle:'red',
 		SlideStyle : 'first'
 	});
 	addSlide({
 		Title:"Frames",
-		Frame : ["On peut ajouter des Frames comme on veut","On peut choisir la couleur","Et l'alignement", "et même les deux à la fois"],
+		Frame : ["On peut ajouter des Frames comme on veut","On peut choisir la couleur de fond","Et l'alignement", "et même les deux à la fois"],
 		FrameStyle : ["none","default_style","center", "right green"],
 	});
 
 	addSlide({
 		Title:"Frames",
 		Frame : ["On peut aussi diviser les frames verticalement",
-		"Et y ajouter des puces{ligne1,ligne2}et c'est très facile"],
-		FrameStyle : ['purple'],
+		"Et y ajouter des puces{ligne1,ligne2} très facilement", "Ainsi qu'ajouter des frames horizontales après des verticales"],
+		FrameStyle : ['purple',"default_style","clear purple center"],
 		SlideStyle : 'vertical'
 	});
 
+	addSlide({
+		Title:'Images',
+		Frame : ["Les images sont faciles à intégrer","smiley.png" ],
+		FrameStyle : ['right','left img'],
+		SlideStyle : 'vertical'
+	});
+
+	addSlide({
+		Title : 'Vidéos',
+		Frame : ["http://www.youtube.com/watch?v=9bZkp7q19f0", "ainsi que les vidéos youtube"],
+		FrameStyle : ['center youtube', 'center purple']
+
+	});
+
+	
 	/*addSlide({
 		Frame : '<div class="row-fluid"><div class="span6">ok</div><div class="span6">ko</div></div>'
 	});*/
@@ -28,7 +43,8 @@ $(function(){
 		TitlesStyleDefault:'blue',
 		FramesStyleDefault:'red center',
 		FontSize : 'auto',
-		Resolution : 'auto'
+		Resolution : '800x600',
+		Author : 'Thibault Friedrich'
 	
 	
 	});
