@@ -1,15 +1,38 @@
-README
 
-This file is part of SmartSlider.
+				 SmartSlider
 
-SmartSlider is free software: you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation, either version 3 of the License, or (at your option) any later
-version.
+What is it ?
+------------
 
-SmartSlider is distributed in the hope that it will be useful, but WITHOUT ANY
-WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+The SmartSlider is a actionScript (javascript) and css plugin which permits to
+generate simple and sexy slides by using only simple jquery functions.
 
-You should have received a copy of the GNU General Public License along
-with SmartSlider.  If not, see <http://www.gnu.org/licenses/>
+It uses the bootstrap and jquery plugins.
+
+SmartSlider is also the name of two other sliders : one adapted for Joomla and
+one for WordPress. This version is completely different and is not an adaptation.
+
+
+The Latest Version
+------------------
+
+Details of the latest version can be found on the github:
+<https://github.com/ThibaultFriedrich/SmartSlider.git/>
+
+
+Installation
+------------
+
+There is not specific operation. You only need to download the files.
+
+Licensing
+---------
+
+Please see the file called LICENSE
+
+Contacts
+--------
+
+You can contact me on github
+
+
