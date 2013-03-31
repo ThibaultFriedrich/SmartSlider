@@ -37,7 +37,7 @@ var gotoPreviousSlide = function(){
 	}
 };
 
-var list_parser = function(string){
+var listParser = function(string){
 	var open = string.indexOf('{');
 	if(open != -1){
 		var begin = string.substr(0,open);
@@ -58,22 +58,18 @@ var list_parser = function(string){
 		return string;
 	}
 
-	/*//string.replace('\n','<br/>');
-	var un = string.split('\\');
-	if(!string.match('\\\\')){
-		return string;
-	} else {
-		var items = un[0].split('->');
-		var html_result = items[0] + '<ul>'; 
-		for(var i = 1 ; i < items.length ; i++){
-			html_result += '<li>' + items[i] + '</li>'; 
-		}
-		html_result += '</ul>' ;
-		if(un[1]){
-			html_result += un[1];
-		}
-		return html_result;
-	}*/
+};
+
+var updateSpanHeight = function(){
+	$('.sub_container.row-fluid').each(function(){
+		var max_height = 0;
+		$(this).children().css('height','100%').each(function(){
+			if(max_height < $(this).height()){
+				max_height = $(this).height();
+			}
+		});
+		$(this).children().height(max_height);
+	});
 };
 
 

@@ -62,7 +62,7 @@ var addSlide = function(params){
 			if(frame.hasClass('img')){
 				frame.html('<img src="'+params.Frame+'">');
 			} else {
-				frame.html(list_parser(params.Frame));
+				frame.html(listParser(params.Frame));
 			}
 		} else {
 			var lastClassNames = "";
@@ -80,7 +80,7 @@ var addSlide = function(params){
 				if(frame.hasClass('img')){
 					frame.html('<img src="'+params.Frame[i]+'">');
 				} else {
-					frame.html(list_parser(params.Frame[i]));
+					frame.html(listParser(params.Frame[i]));
 				}
 			}
 		}
@@ -157,12 +157,28 @@ var configure = function(params){
 	resize_move_w();
 	resize_move_h();
 
+
 	//body = $('body');
 	$(window).resize(placement_goto);
 	$(window).resize(resize_slides);
 	$(window).resize(resize_move_h);
 	$(window).resize(resize_move_w);
 
+	$('.sub_container.row-fluid').each(function(){
+		var frames = $(this).children();
+		var nb = frames.length;
+		frames.each(function(){
+			$(this).addClass('span'+12/nb);
+		});
+	});
+
+	updateSpanHeight();
+
+	$(window).resize(updateSpanHeight);
+
+	all.addClass('font_'+params.FontColor); 
+
+	$('title').html(params.Title);
 
 	$(document).keydown(function(e){
 		if (e.keyCode == 37) { 
@@ -175,18 +191,7 @@ var configure = function(params){
 		}
 	});
 
-	all.addClass('font_'+params.FontColor); 
 
-	$('title').html(params.Title);
-
-
-	$('.sub_container.row-fluid').each(function(){
-		var frames = $(this).children();
-		var nb = frames.length;
-		frames.each(function(){
-			$(this).addClass('span'+12/nb);
-		});
-	});
 
 };
 (function($) {
