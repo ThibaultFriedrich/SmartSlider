@@ -131,7 +131,7 @@ var configure = function(params){
 		FramesStyleDefault : 'none',
 		TitlesStyleDefault : 'none',
 		Author : '',
-		Progression : true
+		ProgressionVisible : true
 	},params);
 
 	if(params.Resolution != "auto"){
@@ -223,8 +223,8 @@ var configure = function(params){
 		$('.author').html(params.Author);
 	}
 
-	if(typeof params.Progression == "boolean"){
-		if(params.Progression){
+	if(typeof params.ProgressionVisible == "boolean"){
+		if(params.ProgressionVisible){
 			$('.progression').css('visibility','visible');
 		} else {
 			$('.progression').css('visibility','hidden');

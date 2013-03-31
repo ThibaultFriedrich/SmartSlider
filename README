@@ -30,128 +30,15 @@ Licensing
 
 Please see the file called LICENSE
 
-Using
------
+How use it ?
+------------
 
 After downloading the files, we need to modify the file application.js which is
 at the root of the project. This file contains an example of slides. When you
-have done these as you wished, open the file index.html to project your slides.
+have done these as you wished, open the file index.html with your browser to
+project your slides.
 
-You can do a nice slider with using only two functions : <addSlide> and
-<configure>
-
-For this functions, you can use simplify tags which are already prepared (you
-can modify some of them by changing the theme). The list of tags is :
-+ center : align the text in the center
-+ left : align the text at the left
-+ right : align the text at the right
-+ red : color the background in red
-+ blue : color the background in blue
-+ green : color the background in green
-+ purple : color the background in purple
-+ img : identify the value as an image
-+ youtube : identify the value as a youtube video
-+ clear : clean the vertical placement
-
-To use a list of tags, you need to write a string which is composed of some of
-these tags. Example : "purple center clear"
-
-	addSlide
-	--------
-	description :
-	This function adds a slide and can only changes the characteristics of the
-	current slide.
-
-	parameters : 
-	Some parameters are optional.
-
-		Title
-		type : <string> | null
-		default value : null
-		behaviour : if the value is null, the slide doesn't have a
-		title. But if the value is a string, a title is added to
-		the slide and has the string as content
-
-		TitleStyle
-		type : <list of tags> | "title_default_style"
-		default value : "title_default_style"
-		behaviour : if the value is "title_default_style", the list of tags
-		defined in the function <configure> will be used for formatting the
-		title. In the other cases, the title will be formatted with the tags
-		defined in the list.
-
-		Frame
-		type : null | <string> | <array of string>
-		default value : null
-		behaviour : if the value is null, no frame will be placed in the slide. If
-		the value is a string, one frame will be placed and its content will be
-		this value. Finally if the value is an array of string, each element of
-		the array will determinate a frame.
-
-		FrameStyle
-		type : "default_style" | <list of tags> | <array of <list of tags>>
-		default value : "default_style"
-		behaviour : if the value is "default_style", the list of tags defined in
-		the function <configure> will be used for formatting the frame. If the
-		value is a list of tags the frame will be formatted with the tags
-		defined in the list. Finally, if the value is an array, each element
-		determinate a frame defined by the parameter Frame. If the array of
-		FrameStyle is smaller than Frame, the frames which don't have explicit
-		styles will be formatted by the function <configure>.
-
-		SlideStyle 
-		type : "vertical" | "classic" | "first"
-		default value : "classic"
-		behaviour : With the value "vertical", the frames will be positioned
-		vertically. But you can cancel this position by using the tag "clear".
-		All frames defined after the frame which has the tag "clear" and this
-		one too, will be placed horizontally under ones placed vertically. If
-		the value is first, the title will be placed at the middle of the slide.
-		This configuration is often used for the first slide of a showing.
-		"classic" is ... the classic value.
-
-
-	configure
-	---------
-
-	This function sets up the defaults values and global informations about the
-	slides.
-
-	parameters :
-	Some parameters are optional.
-
-		Title
-		type : string
-		default value : "Slides"
-		behaviour : The tab in your browser will be named with the value given
-		by Title.
-
-		Resolution
-		type : "auto" | <WIDTHxHEIGHT>
-		default value : "auto"
-		behaviour : Determinate the size of the showing in your browser. The
-		value "auto" allows to the slide to maximize its size. A fixed value
-		(example : "800x600") is useful to have an visual for when you will be
-		on video-projectors.
-
-		FontColor
-		type : "auto" | "light" | "dark"
-		default value : "auto"
-		behaviour : If the value is "auto", the color of the font will be
-		automatically chosen by the theme. If the value is "light", the font
-		will have a light color and else the font will have a dark color.
-
-		FontSize
-		type : "auto" | <SIZE px> | <SIZE em>
-		default value : "auto"
-		behaviour : If the value is auto, the theme will choose the adapted size
-		of the font in the frames in function of the screen size. If you specify
-		the size, the font in the frame will be fixed.
-			
-
-
-		
-
+Please see the file manuel_en.txt
 
 Contacts
 --------

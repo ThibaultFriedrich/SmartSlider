@@ -14,7 +14,7 @@
  *with SmartSlider (file LICENSE).  If not, see <http://www.gnu.org/licenses/>
  */
 var placement_goto = function(){
-	$('.goto img').css('top',all.height()/2 - $('.goto img').height()/2);
+	$('.goto img').css('top',body.height()/2 - $('.goto img').height()/2);
 };
 var resize_slides = function(){
 	$('.slide').width(all.width());
