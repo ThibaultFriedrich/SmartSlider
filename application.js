@@ -34,6 +34,13 @@ $(function(){
 
 	});
 
+	addSlide({
+		Title : 'Personnalisation',
+		TitleStyle : 'none',
+		Frame : ["Et en plus, si vous connaissez l'html et le css, vous pourrez facilement personnaliser les thèmes"],
+		SlideStyle : 'first'
+	});
+
 	
 	/*addSlide({
 		Frame : '<div class="row-fluid"><div class="span6">ok</div><div class="span6">ko</div></div>'
