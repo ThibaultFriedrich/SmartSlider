@@ -30,6 +30,44 @@ Licensing
 
 Please see the file called LICENSE
 
+Using
+-----
+
+After downloading the files, we need to modify the file application.js which is at
+the root of the project.
+
+This file contains an example of slides.
+
+You can do a nice slider with using only two functions : <addSlide> and <configure>
+
+For this functions, you can use simplify tags which are already prepared (you
+can modify some of them by changing the theme). The list of tags is :
++ center : align the text in the center
++ left : align the text at the left
++ right : align the text at the right
++ red : color the background in red
++ blue : color the background in blue
++ green : color the background in green
++ purple : color the background in purple
++ img : identify the value as an image
++ youtube : identify the value as a youtube video
++ clear : clean the vertical placement
+
+		addSlide
+		--------
+			description :
+			This function adds a slide and can only changes the characteristics of the current slide.
+
+			parameters : 
+			Some parameters are optional.
+
+					Title
+					type : <string> | null
+					default value : null
+					behaviour : if the value is null, the slide doesn't have a
+					title. But if the value is a string, a title is added to
+					the slide and has the string as content
+
 Contacts
 --------
 
