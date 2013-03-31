@@ -37,7 +37,7 @@ $(function(){
 	addSlide({
 		Title : 'Personnalisation',
 		TitleStyle : 'none',
-		Frame : ["Et en plus, si vous connaissez l'html et le css, vous pourrez facilement personnaliser les thèmes"],
+		Frame : ["Et en plus, si vous connaissez l'html et le css, vous pourrez facilement faire vos propres thèmes"],
 		SlideStyle : 'first'
 	});
 
