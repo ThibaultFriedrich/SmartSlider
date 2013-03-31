@@ -53,20 +53,20 @@ can modify some of them by changing the theme). The list of tags is :
 + youtube : identify the value as a youtube video
 + clear : clean the vertical placement
 
-		addSlide
-		--------
-			description :
-			This function adds a slide and can only changes the characteristics of the current slide.
+	addSlide
+	--------
+	description :
+	This function adds a slide and can only changes the characteristics of the current slide.
 
-			parameters : 
-			Some parameters are optional.
+	parameters : 
+	Some parameters are optional.
 
-					Title
-					type : <string> | null
-					default value : null
-					behaviour : if the value is null, the slide doesn't have a
-					title. But if the value is a string, a title is added to
-					the slide and has the string as content
+		Title
+		type : <string> | null
+		default value : null
+		behaviour : if the value is null, the slide doesn't have a
+		title. But if the value is a string, a title is added to
+		the slide and has the string as content
 
 Contacts
 --------
