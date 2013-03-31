@@ -37,8 +37,8 @@ How use it ?
 
 After downloading the files, we need to modify the file application.js which is
 at the root of the project. This file contains an example of slides. When you
-have done these as you wished, open the file index.html with your browser to
-project your slides.
+have changed the file as you wished, open the file index.html with your browser
+to project your slides.
 
 Please see the file manuel_en.txt
 

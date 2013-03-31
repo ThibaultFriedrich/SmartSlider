@@ -3,8 +3,8 @@ User Manuel
 
 After downloading the files, we need to modify the file application.js which is
 at the root of the project. This file contains an example of slides. When you
-have done these as you wished, open the file index.html with your browser to
-project your slides.
+have changed the file as you wished, open the file index.html with your browser
+to project your slides.
 
 You can do a nice slider with using only two functions : <addSlide> and
 <configure>
