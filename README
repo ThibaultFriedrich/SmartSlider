@@ -43,6 +43,16 @@ to project your slides.
 Please see the file manuel_en.txt
 
 
+Future updates
+--------------
+
+The next updates will be :
++ management of animations in a slide
++ debug version to help people who don't have javascript console to debug their slides
++ an other theme
++ a fixed version (you won't need anymore to put the repertory smartslider next to index.html) 
+
+
 Contacts
 --------
 
