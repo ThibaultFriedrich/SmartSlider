@@ -3,7 +3,8 @@ $(function(){
 		Title:"SmartSlider", 
 		Frame : 'Ce plugin jquery et css va vous permettre de faire des présentations très rapidement', 
 		FrameStyle : 'none',
-		TitleStyle:'red'
+		TitleStyle:'red',
+		SlideStyle : 'first'
 	});
 	addSlide({
 		Title:"Frames",
@@ -14,7 +15,7 @@ $(function(){
 	addSlide({
 		Title:"Frames",
 		Frame : ["On peut aussi diviser les frames verticalement",
-		"Et y ajouter des puces","ok","ko"],
+		"Et y ajouter des puces{ligne1,ligne2}et c'est très facile"],
 		FrameStyle : ['purple'],
 		SlideStyle : 'vertical'
 	});
@@ -25,7 +26,10 @@ $(function(){
 	configure({
 		Title:'slides',
 		TitlesStyleDefault:'blue',
-		FramesStyleDefault:'red center'
+		FramesStyleDefault:'red center',
+		FontSize : 'auto',
+		Resolution : 'auto'
+	
 	
 	});
 });

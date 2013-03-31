@@ -1,5 +1,4 @@
-body.theme-default {
-	/*background : red;*/
+.all.theme-default  {
 	color : black;
 }
 
@@ -11,8 +10,16 @@ body.theme-default {
 	background : white;
 	margin : 20px;
 	padding : 20px;
-
+	font-size : 30px;
+	line-height : 30px;
 }
+
+.theme-default.small .frame {
+	font-size : 20px;
+	line-height : 20px;
+}
+
+
 .theme-default h2 {
 	height : 44px;
 	padding : 5px;
@@ -52,11 +59,7 @@ body.theme-default {
 .theme-default.font_auto .green, 
 .theme-default.font_auto .blue,
 .theme-default.font_auto .red,
-.theme-default.font_auto .purple,
-.theme-default.font_light .green, 
-.theme-default.font_light .blue,
-.theme-default.font_light .red,
-.theme-default.font_light .purple
+.theme-default.font_auto .purple
 {
 	color : #b2b2b2;
 }
@@ -70,6 +73,25 @@ body.theme-default {
 	color : black;
 }
 
+.theme-default ul {
+	text-align : left;
+	padding-left : 40px;
+	padding-right : 40px;
+}
+
+.theme-default.small ul {
+	padding-left : 20px;
+	padding-right : 20px;
+}
+
+.theme-default li {
+	line-height : 40px;
+	list-style-type:square;
+}
+
+.theme-default.small li {
+	line-height : 30px;
+}
 
 
 

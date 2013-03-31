@@ -10,6 +10,23 @@ body {
 	width : 100%;
 	height : 100%;
 	overflow : hidden;
+	background : black;
+}
+
+.all {
+	position : absolute;
+	top : 0px;
+	left : 0px;
+	bottom : 0px;
+	right : 0px;
+
+	margin : 0px;
+	padding : 0px;
+	width : 100%;
+	height : 100%;
+	overflow : hidden;
+	margin : auto;
+	margin-top : 50px;
 }
 
 .goto {
@@ -71,8 +88,6 @@ body {
 }
 
 .slide-container {
-	font-size : 30px;
-	/*line-height : 30px;*/
 }
 
 .left {
@@ -85,6 +100,10 @@ body {
 
 .center {
 	text-align : center;
+}
+
+.justify {
+	text-align : justify;
 }
 
 .row-fluid {
