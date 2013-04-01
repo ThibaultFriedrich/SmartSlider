@@ -131,7 +131,8 @@ var configure = function(params){
 		FramesStyleDefault : 'none',
 		TitlesStyleDefault : 'none',
 		Author : '',
-		ProgressionVisible : true
+		ProgressionVisible : true,
+		Theme : 'theme-default'
 	},params);
 
 	if(params.Resolution != "auto"){
@@ -146,6 +147,10 @@ var configure = function(params){
 	if(params.FontSize != 'auto'){
 		$('.frame').css('font-size',params.FontSize)
 			.css('line-height',params.FontSize);
+	}
+
+	if(typeof params.Theme == "string"){
+		all.addClass(params.Theme);
 	}
 
 	$('h2.title_default_style').addClass(params.TitlesStyleDefault);

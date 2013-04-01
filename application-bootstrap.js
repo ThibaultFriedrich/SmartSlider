@@ -16,7 +16,7 @@ $(function(){
 		Title:"Frames",
 		Frame : ["On peut aussi diviser les frames verticalement",
 		"Et y ajouter des puces{ligne1,ligne2} très facilement", "Ainsi qu'ajouter des frames horizontales après des verticales"],
-		FrameStyle : ['purple',"default_style","clear purple center"],
+		FrameStyle : ['yellow',"default_style","clear black center"],
 		SlideStyle : 'vertical'
 	});
 
@@ -30,7 +30,7 @@ $(function(){
 	addSlide({
 		Title : 'Vidéos',
 		Frame : ["http://www.youtube.com/watch?v=9bZkp7q19f0", "ainsi que les vidéos youtube"],
-		FrameStyle : ['center youtube', 'center purple']
+		FrameStyle : ['center youtube', 'center black']
 
 	});
 
@@ -38,6 +38,7 @@ $(function(){
 		Title : 'Personnalisation',
 		TitleStyle : 'none',
 		Frame : ["Et en plus, si vous connaissez l'html et le css, vous pourrez facilement faire vos propres thèmes"],
+		FrameStyle : ['blue'],
 		SlideStyle : 'first'
 	});
 
@@ -52,7 +53,7 @@ $(function(){
 		FontSize : 'auto',
 		Resolution : 'auto',
 		Author : 'Thibault Friedrich',
-		//Theme : 'theme-bootstrap'
+		Theme : 'theme-bootstrap'
 	
 	
 	});
