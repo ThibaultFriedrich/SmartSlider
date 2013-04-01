@@ -37,8 +37,8 @@ $(function(){
 	addSlide({
 		Title : 'Personnalisation',
 		TitleStyle : 'none',
-		Frame : ["Et en plus, si vous connaissez l'html et le css, vous pourrez facilement faire vos propres thèmes"],
-		SlideStyle : 'first'
+		Frame : ["Et en plus, si vous connaissez l'html et le css, vous pourrez facilement faire vos propres thèmes","Cliquer <a href='export-bootstrap.html'>ici</a> pour découvrir le même slide avec un autre thème"],
+		SlideStyle : 'classic'
 	});
 
 	
