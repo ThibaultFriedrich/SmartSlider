@@ -81,7 +81,7 @@ var addSlide = function(params){
 			if(frame.hasClass('img')){
 				frame.html('<img src="'+params.Frame+'">');
 			} else if(frame.hasClass('youtube')) {
-					frame.html('<object width="50%" height="50%"><param name="movie" value="'+params.Frame+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/9bZkp7q19f0?hl=fr_FR&amp;version=3" type="application/x-shockwave-flash" width="50%" height="50%" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
+					frame.html('<object width="50%" height="50%"><param name="movie" value="'+params.Frame+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="'+params.Frame+'" type="application/x-shockwave-flash" width="50%" height="50%" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
 			} else {
 				frame.html(listParser(params.Frame));
 			}
@@ -106,7 +106,7 @@ var addSlide = function(params){
 				if(frame.hasClass('img')){
 					frame.html('<img src="'+params.Frame[i]+'">');
 				} else if(frame.hasClass('youtube')) {
-					frame.html('<object width="560" height="315"><param name="movie" value="'+params.Frame[i]+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/9bZkp7q19f0?hl=fr_FR&amp;version=3" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
+					frame.html('<object width="560" height="315"><param name="movie" value="'+params.Frame[i]+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="'+params.Frame+'" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
 				} else {
 					frame.html(listParser(params.Frame[i]));
 				}
