@@ -81,7 +81,8 @@ var addSlide = function(params){
 			if(frame.hasClass('img')){
 				frame.html('<img src="'+params.Frame+'">');
 			} else if(frame.hasClass('youtube')) {
-					frame.html('<object width="50%" height="50%"><param name="movie" value="'+params.Frame+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="'+params.Frame+'" type="application/x-shockwave-flash" width="50%" height="50%" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
+                    frame.html('<iframe width="560" height="315" src="'+params.Frame+'?rel=0" frameborder="0" allowfullscreen></iframe>');
+					//frame.html('<object width="50%" height="50%"><param name="movie" value="'+params.Frame+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="'+params.Frame+'" type="application/x-shockwave-flash" width="50%" height="50%" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
 			} else {
 				frame.html(listParser(params.Frame));
 			}
@@ -106,7 +107,8 @@ var addSlide = function(params){
 				if(frame.hasClass('img')){
 					frame.html('<img src="'+params.Frame[i]+'">');
 				} else if(frame.hasClass('youtube')) {
-					frame.html('<object width="560" height="315"><param name="movie" value="'+params.Frame[i]+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="'+params.Frame[i]+'" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
+                    frame.html('<iframe width="560" height="315" src="'+params.Frame[i]+'?rel=0" frameborder="0" allowfullscreen></iframe>');
+					//frame.html('<object width="560" height="315"><param name="movie" value="'+params.Frame[i]+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="'+params.Frame[i]+'" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
 				} else {
 					frame.html(listParser(params.Frame[i]));
 				}
