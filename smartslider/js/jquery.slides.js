@@ -106,7 +106,7 @@ var addSlide = function(params){
 				if(frame.hasClass('img')){
 					frame.html('<img src="'+params.Frame[i]+'">');
 				} else if(frame.hasClass('youtube')) {
-					frame.html('<object width="560" height="315"><param name="movie" value="'+params.Frame[i]+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="'+params.Frame+'" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
+					frame.html('<object width="560" height="315"><param name="movie" value="'+params.Frame[i]+'"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="'+params.Frame[i]+'" type="application/x-shockwave-flash" width="560" height="315" allowscriptaccess="always" allowfullscreen="true"></embed></object>');
 				} else {
 					frame.html(listParser(params.Frame[i]));
 				}

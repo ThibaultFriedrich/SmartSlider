@@ -29,7 +29,7 @@ $(function(){
 
 	addSlide({
 		Title : 'Vidéos',
-		Frame : ["http://www.youtube.com/watch?v=9bZkp7q19f0", "ainsi que les vidéos youtube"],
+		Frame : ["http://www.youtube.com/v/9bZkp7q19f0?", "ainsi que les vidéos youtube"],
 		FrameStyle : ['center youtube', 'center purple']
 
 	});
