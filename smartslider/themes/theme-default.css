@@ -71,6 +71,11 @@
 	padding : 20px;
 }
 
+.theme-default .frame.simple {
+	margin : 0px;
+	padding : 0px;
+}
+
 .theme-default.font_auto .green, 
 .theme-default.font_auto .blue,
 .theme-default.font_auto .red,
