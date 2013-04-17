@@ -46,6 +46,12 @@
 	/*background : red;*/
 }
 
+.theme-default h2.title-first {
+	font-size : 40px;	
+	/*height : 50px;*/
+	/*vertical-align : middle;*/
+}
+
 .theme-default .green {
 	box-shadow : 0px 0px 50px #2a7d22;
 	background-color : #2a5422;

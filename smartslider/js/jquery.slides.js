@@ -72,6 +72,7 @@ var addSlide = function(params){
         frame_container = $('<div class="sub_container row-fluid"></div>').appendTo(container);
     } else if(params.SlideStyle == 'first'){
         title.css('margin-top','25%');
+        title.addClass('title-first');
     }
 
     // Frames
