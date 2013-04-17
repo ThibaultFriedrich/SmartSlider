@@ -62,9 +62,13 @@ var addSlide = function(params){
 
 
     // Title
-    if(typeof params.Title == "string"){
+    if(typeof params.Title == "string" && params.SlideStyle != "first"){
         var title = $('<h2></h2>').appendTo(container);
         title.addClass(params.TitleStyle).html(params.Title);
+    } else if(typeof params.Title == "string"){
+        var title = $('<h1></h1>').appendTo(container);
+        title.addClass(params.TitleStyle).html(params.Title);
+
     }
 
     var frame_container = container;
